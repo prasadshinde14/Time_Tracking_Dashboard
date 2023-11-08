@@ -1,5 +1,132 @@
-main {
-  text-align: center;
-  vertical-align: center;
-  line-height: 100vh
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+body{
+  font-family: "Rubik", sans-serif;
+  background-color:  hsl(226, 43%, 10%);
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.wrapper{
+  margin: auto auto;
+  /* min-width: 80%; */
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 1rem;
+}
+
+.profile{
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 5px;
+  word-wrap: wrap;
+  padding: 1rem 2rem 3rem 1rem;
+  position: relative;
+}
+
+.profile img{
+  margin: 1rem 0;
+}
+
+.profile p{
+  font-size: 0.7rem;
+  color: hsl(236, 100%, 87%)
+}
+
+.profile h1{
+  font-weight: 300;
+}
+
+.dwm{
+  border-radius: 5px;
+  margin-top: -1.5rem;
+  padding: 2rem 1rem 1rem;
+  background-color: hsl(235, 46%, 20%);
+  cursor: pointer;
+}
+
+.dwm p:hover{
+  color: hsl(235, 45%, 61%)
+}
+
+.dwm p{
+  margin: 1rem auto;
+}
+
+.selected{
+  color: hsl(236, 100%, 87%)
+}
+
+.time-cards{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto auto auto;
+}
+
+.work-card{
+  
+}
+
+.bg-work{
+  background-color: hsl(15, 100%, 70%);
+}
+
+.img-alignment{
+  border-radius: 7px;
+  padding-right: 0.5rem;
+  text-align: right;
+}
+
+.card-data{
+  margin-top: -1rem;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 7px;
+  padding: 1rem;
+  position: relative;
+}
+
+.bg-play{
+  background-color: hsl(195, 74%, 62%);
+}
+
+.bg-study{
+  background-color: hsl(348, 100%, 68%);
+}
+
+.bg-exercise{
+  background-color: hsl(145, 58%, 55%);
+}
+
+.bg-social{
+  background-color: hsl(264, 64%, 52%);
+}
+
+.bg-self-care{
+  background-color: hsl(43, 84%, 65%);
+}
+
+.card-title{
+  display: flex;
+  justify-content:space-between;
+}
+
+.hrs{
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.l-week{
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: hsl(236, 100%, 87%)
+}
+
